@@ -1,0 +1,57 @@
+@import 'geral.css';
+
+.navigation-terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+.nav-item-terms{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: var(--primaria);
+}
+.separator-terms{
+    width: 6px;
+    height: 6px;
+    background-color: var(--primaria);
+    border-radius: 50%;
+    display: inline-block;
+}
+.heading-terms{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.terms-content{
+    margin-bottom: 2rem;
+}
+.terms-title{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+.terms-text{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+.terms-list{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+}

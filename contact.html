@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Contato</title>
+</head>
+
+<body>
+    <section class="header-container">
+        <img src="images/selezione-safra.png" class="header-logo" />
+        <nav class="header-navigation">
+            <ul class="header-menu">
+                <li class="menu-item"> <a href="/" class="menu-link">Home</a> </li>
+                <li class="menu-item"> <a href="/about.html" class="menu-link">Sobre</a> </li>
+                <li class="menu-item"> <a href="/solutions.html" class="menu-link">Soluções</a> </li>
+                <li class="menu-item"> <a href="/advisors.html" class="menu-link">Assessores</a> </li>
+                <li class="menu-item"> <a href="/contact.html" class="menu-link">Entre em contato</a> </li>
+            </ul>
+        </nav>
+        <button class="header-contact-button">FALE COM UM ASSESSOR</button>
+    </section>
+    <section class="header-container-mobile">
+        <div class="container-img-button-mobile">
+            <img src="images/selezione-safra.png" class="header-logo-mobile" />
+            <img class="hamburger-menu" src="/images/Menu.png" />
+        </div>
+        <div id="myMenu" class="menu">
+            <div class="menu-content">
+                <img class="close" src="/images/Close.png" />
+                <div class="container-logo-menu">
+                    <img src="images/logo-selezione-blue.png" class="logo-selezione-menu" />
+                </div>
+                <ul class="header-menu-mobile">
+                    <li class="menu-item-mobile"> <a href="/" class="menu-link-mobile">Home</a> </li>
+                    <hr class="line-menu">
+                    <li class="menu-item-mobile"> <a href="/about.html" class="menu-link-mobile">Sobre</a> </li>
+                    <hr class="line-menu">
+                    <li class="menu-item-mobile"> <a href="/solutions.html" class="menu-link-mobile">Soluções</a> </li>
+                    <hr class="line-menu">
+                    <li class="menu-item-mobile"> <a href="/advisors.html" class="menu-link-mobile">Assessores</a> </li>
+                    <hr class="line-menu">
+                    <li class="menu-item-mobile"> <a href="/contact.html" class="menu-link-mobile">Entre em contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div>
+            <button class="header-contact-button-mobile">FALE COM UM ASSESSOR</button>
+        </div>
+    </section>
+
+    <section class="container-content">
+        <section class="toper-contact">
+            <div class="navigation-contact">
+                <p class="nav-item-contact">Home</p>
+                <span class="separator-contact"></span>
+                <p class="nav-item-contact">Entre em contato</p>
+            </div>
+            <h2 class="heading-contact">ENTRE EM CONTATO</h2>
+            <p class="description-contact">Conheça mais sobre as nossas soluções e propostas de investimentos exclusivas
+                para seu patrimônio! Preencha o formulário abaixo e solicite uma conversa com um de nossos
+                especialistas.</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-image-container">
+                <img src="/images/personContact.png" class="contact-image" alt="Imagem de contato">
+            </div>
+            <div class="contain-form-contact">
+                <div class="content-form">
+                    <h2>FALE UM UM ASSESSOR</h2>
+                    <form class="form-contact" id="contact-form">
+                        <input type="text" id="name" name="name" class="form-input-contact" placeholder="Nome" required>
+                        <input type="text" id="sobrenome" name="sobrenome" class="form-input-contact" placeholder="Sobrenome"
+                            required>
+                        <input type="tel" id="phone" name="phone" class="form-input-contact" placeholder="Celular" required>
+                        <input type="email" id="email" name="email" class="form-input-contact" placeholder="E-mail" required>
+                        <label for="subject" class="form-label-contact">Quanto quer investir?</label>
+                        <select id="subject" name="subject" class="form-select-contact" required>
+                            <option value="300mil-1milhao" class="option-contact" selected>R$ 300 mil a R$ 1 milhão</option>
+                            <option value="1milhao-5milhoes" class="option-contact">R$ 1 milhão a R$ 5 milhões</option>
+                            <option value="acima-5milhoes" class="option-contact">Acima de R$ 5 milhões</option>
+                        </select>
+        
+                        <label for="message" class="form-label-contact">Descreva brevemente seus objetivos com os
+                            investimentos e nossas soluções (opcional):</label>
+                        <textarea id="message" name="message" class="form-textarea-contact"
+                            placeholder="Escreva aqui"></textarea>
+                        <button type="submit" class="form-button">ENVIAR</button>
+                    </form>
+                </div>
+        
+                <div class="check-dispatch" id="success-message" style="display: none;">
+                    <div class="content-center">
+                        <img src="./images/chek-icon.png" />
+                        <h2>SEUS DADOS FORAM ENVIADOS COM SUCESSO!</h2>
+                        <p>LOGO UM DE NOSSOS ASSESSORES ENTRARÁ EM CONTATO COM VOCÊ.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/logo-negativo-selezione-safra.png" />
+            </div>
+            <div class="footer-contact">
+                <h3>Entre em contato:</h3>
+                <p>(00) 0000-0000</p>
+                <p>email@selezione.com </p>
+            </div>
+            <div class="footer-links">
+                <p><a href="/privacy.html">Politica de privacidade</a></p>
+                <p><a href="/termsUse.html"> Termos de uso </a></p>
+            </div>
+            <div class="footer-socials">
+                <img src="/images/facebook.png" />
+                <img src="/images/whatsapp.png" />
+                <img src="/images/youtube.png" />
+                <img src="/images/instagram.png" />
+                <img src="/images/linkedin.png" />
+            </div>
+        </div>
+
+        <hr class="line-footer">
+
+        <div class="footer-info">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo purus in est convallis, vel luctus
+                lorem
+                varius. Ut condimentum euismod nisi, ut volutpat justo posuere nec. Vivamus euismod justo id ex tempus,
+                at
+                mollis nisi tincidunt. Cras nec mauris vitae mi sodales vestibulum. Quisque at dictum purus. Nullam sit
+                amet
+                eleifend quam. Aliquam erat volutpat. Integer vitae nisi eget purus condimentum viverra. Morbi in mauris
+                ac ex
+                congue aliquam eget ac justo. Donec pretium, lorem et mattis viverra, velit leo vestibulum odio, sed
+                aliquam
+                metus libero vel risus. Sed vestibulum justo nec orci suscipit, at pharetra ipsum lobortis. Vivamus
+                vitae felis
+                ac velit congue placerat. Nullam vel enim nec magna feugiat tincidunt. Sed euismod volutpat lorem, vel
+                tempus
+                libero. Vivamus consequat eros eget tortor blandit, ut bibendum mauris pharetra. Suspendisse non felis
+                nec
+                lectus condimentum volutpat sed sed ligula. Nulla facilisi. Curabitur sed massa eget justo venenatis
+                finibus.
+                Vivamus fermentum risus eu lectus pharetra, nec ultricies tortor viverra. Vestibulum ante ipsum primis
+                in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Sed tristique eros id arcu aliquam, nec dictum
+                odio
+                fermentum.
+            </p>
+            <div class="footer-legal-container">
+                <div class="footer-legal">
+                    <h3>@2024 SELEZIONE INVESTIMENTOS - TODOS OS DIREIOS RESERVADOS.</h3>
+                    <p>Selezione - Assessor De Investimentos S/s Ltda - CNPJ: 53.464.332/0001-93.</p>
+                </div>
+            </div>
+            <div class="footer-partner">
+                <p>by</p>
+                <img src="/images/logo-pandanjo.png" />
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="module" src="/js/script.js"></script>
+
+</html>

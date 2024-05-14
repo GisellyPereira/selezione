@@ -1,0 +1,94 @@
+@import 'geral.css';
+
+/* EXPERIENCIA DA HOME */
+
+.experience-section {
+    margin-top: 4rem;
+    background-color: var(--primaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.container-selo {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.selo-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience-content {
+    color: var(--secundaria);
+    flex: 2;
+}
+
+.title-experience {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.subtitle-experience {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.description-experience {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .experience-section {
+        padding: 2rem;
+        gap: 1rem;
+    }
+    
+    .container-selo {
+        max-width: 25%;
+    }
+    .title-experience {
+        font-size: 20px;
+    }
+    
+    .subtitle-experience {
+        font-size: 14px;
+    }
+    
+    .description-experience {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-selo {
+        max-width: 100%;
+    }
+    .experience-section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .experience-content {
+        text-align: center;
+    }
+    
+}

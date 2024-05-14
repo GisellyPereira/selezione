@@ -1,0 +1,146 @@
+@import 'geral.css';
+
+.about-home{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    background-color: var(--secundaria);
+}
+.image-container {
+    width: 60%;
+    max-width: 100%;
+}
+.image-person{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-content{
+    flex: 1;
+    padding: 3rem 5rem;
+}
+.title-about{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--primaria);
+}
+.subtitle-about{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+.about-parag-01{
+    font-family: "Lato", sans-serif;
+    margin: 25px 0 15px 0;
+    color: var(--dark);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+.btn-about{
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    background-color: transparent;
+    border: 1px solid var(--primaria);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: var(--primaria);
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-about:hover{
+    color: var(--secundaria);
+    background-color: var(--primaria);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1555px) {
+    .about-content{
+        padding: 2rem 3rem;
+    }
+}
+@media (max-width: 1455px) {
+    .about-content{
+        padding: 2rem 2rem;
+    }
+    .title-about{
+        font-size: 22px;
+    }
+    .subtitle-about{
+        font-size: 18px;
+    }
+    .about-parag-01{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1411px) {
+    .about-parag-01{
+        font-size: 15px;
+        margin: 10px 0 8px 0;
+
+    }
+}
+
+@media (max-width: 1238px) {
+    .title-about{
+        font-size: 20px;
+    }
+    .subtitle-about{
+        font-size: 16px;
+    }
+    .about-parag-01{
+        font-size: 14px;
+        margin: 0px 0 8px 0;
+    }
+}
+@media (max-width: 1035px) {
+    .about-content{
+        padding: 1rem 1rem;
+    }
+    .title-about{
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .subtitle-about{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .about-parag-01{
+        margin: 0px 0 5px 0;
+    }
+    .btn-about{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-home{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%; 
+    }
+    .title-about{
+        font-size: 20px;
+    }
+    .subtitle-about{
+        font-size: 16px;
+        margin-bottom: px;
+    }
+    .about-parag-01{
+        margin: 15px 0 10px 0;
+    }
+    .btn-about{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,200 @@
+@import 'geral.css';
+
+.section-slide-about{
+    background: var(--secundaria);
+    padding: 3rem 2rem;
+    margin-top: 40px;
+    display: block;
+}
+.slide-about{
+    display: flex;
+    justify-content: center;
+}
+.item-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.section-title-slide{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.section-sub-slide{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.title-item{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: var(--primaria);
+}
+.subtitle-item{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--dark);
+}
+.two-item{
+    padding: 20px;
+}
+
+.section-slide-about-mobile{
+    background: var(--secundaria);
+    padding: 3rem 2rem;
+    margin-top: 40px;
+    display: none;
+}
+.slide-about-mobile{
+    display: flex;
+    justify-content: center;
+}
+
+.item-slide-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.about-slick .slick-prev,
+.about-slick .slick-next {
+    font-family: initial !important;
+    z-index: 1;
+}
+
+
+.about-slick .slick-dots li {
+    display: inline-block !important;
+    margin: -15px 0 !important;
+}
+.about-slick .slick-dots li button {
+    font-size: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: var(--cinza-claro) !important;
+    border: none !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+.about-slick .slick-dots li.slick-active button {
+    background-color: var(--primaria) !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.about-slick .slick-dots li button:before {
+    display: none !important;
+}
+
+
+/* MISSAO E VALORES */
+
+.mission-values-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 500px;
+    
+}
+.mission-title{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--primaria);
+}
+.mission-description{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: var(--dark);
+    
+    text-align: start;
+}
+.values-abouts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 500px;
+    text-align: start;
+
+}
+.values-title{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--primaria);
+}
+.value-about {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 950px) {
+    .mission-values-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mission{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 1rem;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-slide-about{
+        display: none;
+    }
+    .section-slide-about-mobile{
+        display: block;
+    }
+    .values-abouts{
+        padding: 0;
+    }
+}

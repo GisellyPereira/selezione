@@ -1,0 +1,152 @@
+@import 'geral.css';
+
+/* FORM CONTACT */
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+}
+.contact-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contain-form-contact{
+    background-color: var(--secundaria);
+    padding: 2rem;
+    
+}
+.contain-form-contact h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 19px;
+    margin-bottom: 2rem;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+}
+.form-input-contact{
+    background-color: var(--secundaria);
+    border: 1px solid var(--primaria);
+    padding: 16px;
+    margin-bottom: 1.5rem;
+}
+.form-input-contact::placeholder{
+    color: var(--primaria);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+.form-label-contact{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 1rem;
+}
+.form-select-contact{
+    background-color: var(--secundaria);
+    border: 1px solid var(--primaria);
+    padding: 16px;
+    margin-bottom: 1rem;
+}
+
+.option-contact{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+.form-textarea-contact{
+    background-color: var(--secundaria);
+    border: 1px solid var(--primaria);
+    padding: 16px;
+    height: 150px;
+    margin-bottom: 1rem;
+    resize: none;
+}
+.form-contact button{
+    background-color: var(--primaria);
+    color: var(--secundaria);
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 1rem;
+    transition: all 0.5s ease;
+}
+
+.form-contact button:hover{
+    background-color: var(--azul-medio);
+}
+
+.check-dispatch {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box;  
+    height: 100%; 
+    margin-top: 15rem;
+}
+.check-dispatch img {
+    margin-bottom: 20px;
+}
+
+.content-center {
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .contact-image-container {
+        display: none;
+    }
+    .contain-form-contact h2 {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+    .form-input-contact {
+        padding: 14px;
+    }
+    .form-input-contact::placeholder {
+        font-size: 14px;
+    }
+    .form-label-contact {
+        font-size: 14px;
+    }
+    .form-select-contact {
+        font-size: 14px;
+        padding: 14px;
+    }
+    .option-contact {
+        font-size: 14px;
+    }
+    .form-textarea-contact {
+        font-size: 14px;
+    }
+    .form-contact button {
+        font-size: 14px;
+    }
+    .check-dispatch {
+        margin-top: 0rem;
+    }
+
+}

@@ -1,0 +1,276 @@
+@import 'geral.css';
+
+/* BANNER HOME */
+.banner-home{
+    display: block;
+}
+.banner-item {
+    position: relative;
+    object-fit: contain;
+}
+.banner-item img {
+    width: 100%;
+    display: block;
+   
+}
+.content-banner {
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    max-width:550px;
+    text-align: center;
+    color: var(--secundaria);
+}
+.title-banner{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-family: "Libre Bodoni", serif;
+    letter-spacing: 1px;
+}
+.description-banner{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+.btn-banner{
+    background: transparent;
+    color: var(--secundaria);
+    border: 1px solid var(--secundaria);
+    padding: 11px 27px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.banner-slick.slick-slider {
+    overflow: hidden;
+}
+
+.banner-slick .slick-prev,
+.banner-slick .slick-next {
+    font-family: initial !important;
+    z-index: 1;
+}
+
+.banner-slick .slick-prev:before,
+.banner-slick .slick-next:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 24px !important;
+    background-size: contain;
+}
+
+.banner-slick .slick-prev:before {
+    background-image: url('../images/setaPrevWhite.png');
+    margin-left: 7rem;
+}
+
+.banner-slick .slick-next:before {
+    background-image: url('../images/setaNextWhite.png');
+    margin-left: -15rem;
+}
+
+.banner-slick .slick-dots {
+    position: absolute !important;
+    bottom: 10px !important;
+    width: 100% !important;
+    text-align: center !important;
+    list-style: none !important;
+}
+
+.banner-slick .slick-dots li {
+    display: inline-block !important;
+    margin: 0 0 !important;
+}
+
+.banner-slick .slick-dots li button {
+    font-size: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: var(--secundaria) !important;
+    border: none !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+.banner-slick .slick-dots li.slick-active button {
+    background-color: var(--primaria) !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.banner-slick .slick-dots li button:before {
+    display: none !important;
+}
+
+
+
+/* BANNER HOME MOBILE */
+
+.banner-home-mobile{
+    display: none;
+}
+
+.banner-home-mobile .banner-item-mobile img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.content-banner-mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+    color: var(--secundaria);
+    width: 320px;
+    padding: 10px;
+}
+.title-banner-mobile{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-family: "Libre Bodoni", serif;
+}
+.description-banner-mobile{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif;
+}
+.btn-banner-mobile{
+    background: transparent;
+    color: var(--secundaria);
+    border: 1px solid var(--secundaria);
+    padding: 8px 27px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+.banner-mobile-slick.slick-slider {
+    overflow: hidden;
+}
+
+.banner-mobile-slick .slick-prev,
+.banner-mobile-slick .slick-next {
+    font-family: initial !important;
+    z-index: 1;
+}
+
+.banner-mobile-slick .slick-prev:before,
+.banner-mobile-slick .slick-next:before {
+   display: none;
+}
+
+.banner-mobile-slick .slick-prev:before {
+   display: none;
+}
+
+.banner-mobile-slick .slick-next:before {
+   display: none;
+}
+
+.banner-mobile-slick .slick-dots {
+    position: absolute !important;
+    bottom: 10px !important;
+    width: 100% !important;
+    text-align: center !important;
+    list-style: none !important;
+}
+
+.banner-mobile-slick .slick-dots li {
+    display: inline-block !important;
+    margin: 0 0 !important;
+}
+
+.banner-mobile-slick .slick-dots li button {
+    font-size: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: var(--secundaria) !important;
+    border: none !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+.banner-mobile-slick .slick-dots li.slick-active button {
+    background-color: var(--primaria) !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.banner-mobile-slick .slick-dots li button:before {
+    display: none !important;
+}
+
+
+
+@media (max-width: 1430px){
+    .content-banner {
+        top: 10rem;
+    }
+    
+}
+
+@media (max-width: 1250px){
+    .content-banner {
+        top: 8rem;
+    }
+    .title-banner{
+        font-size: 20px;
+    }
+    .description-banner{
+        font-size: 17px;
+        
+    }
+}
+@media (max-width: 1035px) {
+    .content-banner {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 400px;
+    }
+
+    .title-banner {
+        font-size: 18px;
+    }
+
+    .description-banner {
+        font-size: 14px;
+    }
+
+    .btn-banner {
+        padding: 8px 17px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+@media (max-width: 800px){
+    .banner-home{
+        display: none;
+    }
+    .banner-home-mobile{
+        display: block;
+    }
+    
+}
+

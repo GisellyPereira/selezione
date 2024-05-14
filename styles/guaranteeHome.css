@@ -1,0 +1,307 @@
+@import 'geral.css';
+
+/* GARANTIA */
+
+.guarantee-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.container-guarantee {
+    background-color: var(--primaria);
+    width: 35%;
+    color: var(--secundaria);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.texts-guarantee{
+    padding: 20px;
+}
+.texts-guarantee h2{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-family: "Libre Bodoni", serif;
+    font-size: 20px;
+}
+.texts-guarantee p {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 19px;
+}
+
+.image-logo-negativa {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    padding: 8px 20px;
+}
+
+.guarantee-features {
+    flex: 1; 
+    background-color: var(--secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+
+.content-guarantee {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    max-width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.feature-content {
+    margin-left: 20px;
+}
+
+.feature-content h3{
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-family: "Libre Bodoni", serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.feature-content p{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.guarantee-slick .slick-prev,
+.guarantee-slick .slick-next {
+    font-family: initial !important;
+    z-index: 1;
+}
+
+.guarantee-slick .slick-prev:before,
+.guarantee-slick .slick-next:before {
+    display: none !important;
+}
+
+.guarantee-slick .slick-prev:before {
+    display: none !important;
+}
+
+.guarantee-slick .slick-next:before {
+    display: none !important;
+}
+
+.guarantee-slick .slick-dots {
+    position: absolute !important;
+    bottom: 10px !important;
+    width: 100% !important;
+    text-align: center !important;
+    list-style: none !important;
+}
+
+.guarantee-slick .slick-dots li {
+    display: inline-block !important;
+    margin: 0 0 !important;
+}
+
+.guarantee-slick .slick-dots li button {
+    font-size: 0 !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: var(--cinza-claro) !important;
+    border: none !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+.guarantee-slick .slick-dots li.slick-active button {
+    background-color: var(--primaria) !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.guarantee-slick .slick-dots li button:before {
+    display: none !important;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+
+
+
+.guarantee-section-mobile {
+    margin-top: 5rem;
+    display: none;
+    flex-direction: column;
+}
+
+.container-guarantee-mobile {
+    background-color: var(--primaria);
+    color: var(--secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px ;
+    position: relative; 
+}
+.texts-guarantee-mobile{
+    padding: 20px;
+}
+.texts-guarantee-mobile h2{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-family: "Libre Bodoni", serif;
+    font-size: 20px;
+}
+.texts-guarantee-mobile p {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 19px;
+}
+
+.image-logo-negativa-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    padding: 8px 20px;
+}
+
+.guarantee-features-mobile {
+    background-color: var(--secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    height: 200px;
+}
+
+
+
+.feature-item-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.feature-image-mobile {
+    margin-right: 20px;
+}
+
+.feature-content-mobile h3{
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-family: "Libre Bodoni", serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.feature-content-mobile p{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.mobile-guarantee-slick .slick-dots {
+    position: absolute !important;
+    bottom: 15px !important;
+    width: 100% !important;
+    text-align: center !important;
+    list-style: none !important;
+}
+
+.mobile-guarantee-slick .slick-dots li {
+    display: inline-block !important;
+    margin: 0 0 !important;
+}
+
+.mobile-guarantee-slick .slick-dots li button {
+    font-size: 0 !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: var(--cinza-claro) !important;
+    border: none !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+.mobile-guarantee-slick .slick-dots li.slick-active button {
+    background-color: var(--primaria) !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.mobile-guarantee-slick .slick-dots li button:before {
+    display: none !important;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+
+@media (max-width: 1230px) {
+    .texts-guarantee h2{
+        font-size: 18px;
+    }
+    .texts-guarantee p {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .guarantee-features {
+        padding: 5px 10px;
+    }
+    .feature-content h3{
+        font-size: 14px;
+    
+    }
+    
+    .feature-content p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .guarantee-section {
+        display: none;
+    }
+    .guarantee-section-mobile {
+        display: flex;
+    }
+}
+
+

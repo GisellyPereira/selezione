@@ -1,0 +1,123 @@
+@import 'geral.css';
+
+.solutions-banner{
+    display: block;
+    position: relative;
+}
+
+.banner-solutions-image {
+    width: 100%;
+    display: block;
+   
+}
+.banner-content-solutions{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--secundaria);
+    padding: 10px;
+    width: 100%;
+}
+.navigation-solutions-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--secundaria);
+   
+}
+.nav-item-solutions-banner{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: var(--secundaria);
+}
+.separator-solutions-banner{
+    width: 6px;
+    height: 6px;
+    background-color: var(--secundaria);
+    border-radius: 50%;
+    display: inline-block;
+}
+.banner-heading-solutions{
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.banner-subheading-solutions{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.cta-button-solutions{
+    background: transparent;
+    color: var(--secundaria);
+    border: 1px solid var(--secundaria);
+    padding: 11px 27px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.cta-button-solutions:hover{
+   background-color: var(--secundaria);
+   color: var(--primaria);
+}
+.text-container-solutions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.text-solutions{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px; 
+}
+.banner-solutions-image.mobile{
+    display: none;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .banner-heading-solutions{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .banner-subheading-solutions{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .cta-button-solutions{
+        padding: 10px 25px;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .banner-solutions-image.mobile{
+        display: block;
+    }
+    .banner-solutions-image{
+        display: none;
+    }
+    .banner-subheading-solutions{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+@import 'geral.css';
+@import 'header.css';
+@import 'footer.css';
+
+/* HOME */
+@import 'bannerHome.css';
+@import 'numbersHome.css';
+@import 'cardsHome.css';
+@import 'experienceHome.css';
+@import 'aboutHome.css';
+@import 'guaranteeHome.css';
+@import 'strategyHome.css';
+
+/* ABOUT */
+
+@import 'about.css';
+@import 'investmentsAbout.css';
+@import 'slideAbout.css';
+
+/* SOLUTIONS */
+@import 'cardsSolutions.css';
+@import 'bannerSolutions.css';
+@import 'benefitsSolutions.css';
+
+
+/* ADVISORS */
+@import 'contentAdvisors.css';
+
+/* CONTACT */
+@import 'contact.css';
+@import 'formContact.css';
+
+/* PRIVACY POLICY */
+@import 'privacyPolicy.css';
+
+/* TERMS OF USE */
+@import 'termsUse.css';
