@@ -2,6 +2,9 @@ export default class Advisors {
     constructor() {
         this.advisors = [];
         this.generateAdvisorNames();
+        document.addEventListener('DOMContentLoaded', () => {
+            this.renderAdvisors();
+        });
     }
 
     generateAdvisorNames() {
@@ -13,23 +16,27 @@ export default class Advisors {
     renderAdvisors() {
         const advisorSection = document.querySelector('.advisor-section');
         
-        this.advisors.map(advisor => {
-            const advisorInfo = document.createElement('div');
-            advisorInfo.classList.add('advisor-info');
+        if (advisorSection) {
+            this.advisors.map(advisor => {
+                const advisorInfo = document.createElement('div');
+                advisorInfo.classList.add('advisor-info');
 
-            const advisorImage = document.createElement('img');
-            advisorImage.src = "/images/perfil.png";
-            advisorImage.classList.add('advisor-image');
+                const advisorImage = document.createElement('img');
+                advisorImage.src = "/images/perfil.png";
+                advisorImage.classList.add('advisor-image');
 
-            const advisorName = document.createElement('p');
-            advisorName.classList.add('advisor-name');
-            advisorName.textContent = advisor;
+                const advisorName = document.createElement('p');
+                advisorName.classList.add('advisor-name');
+                advisorName.textContent = advisor;
 
-            advisorInfo.appendChild(advisorImage);
-            advisorInfo.appendChild(advisorName);
-            
-            advisorSection.appendChild(advisorInfo);
-        });
+                advisorInfo.appendChild(advisorImage);
+                advisorInfo.appendChild(advisorName);
+
+                advisorSection.appendChild(advisorInfo);
+            });
+        } else {
+            console.error('Advisor section not found');
+        }
     }
 }
 
