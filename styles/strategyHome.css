@@ -124,7 +124,7 @@
 @media (max-width: 900px) {
     .strategy-home{
         display: flex;
-        margin-top: 5rem;
+        margin-top: 2rem;
         flex-direction: column-reverse;
     }
     .image-container {

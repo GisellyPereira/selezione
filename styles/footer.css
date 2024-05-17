@@ -47,6 +47,10 @@
     cursor: pointer;
     text-decoration: none;
 }
+.footer-links p{
+    margin-bottom: 10px;
+}
+
 
 
 .footer-socials img{

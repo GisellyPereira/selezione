@@ -12,8 +12,6 @@ export default class SlideAbout {
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    fade: true,
-                    cssEase: 'linear'
                 });
             });
         })(jQuery);

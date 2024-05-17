@@ -30,7 +30,7 @@
                 <li class="menu-item"> <a href="/contact.html" class="menu-link">Entre em contato</a> </li>
             </ul>
         </nav>
-        <button class="header-contact-button">FALE COM UM ASSESSOR</button>
+        <button class="header-contact-button open-modal-button">FALE COM UM ASSESSOR</button>
     </section>
     <section class="header-container-mobile">
         <div class="container-img-button-mobile">
@@ -54,11 +54,14 @@
                     <hr class="line-menu">
                     <li class="menu-item-mobile"> <a href="/contact.html" class="menu-link-mobile">Entre em contato</a> </li>
                 </ul>
+                <div class="btn-menu-mobile">
+                    <button  class="header-contact-button-menu open-modal-button">FALE COM UM ASSESSOR</button>
+                </div>
             </div>
 
         </div>
         <div>
-            <button class="header-contact-button-mobile">FALE COM UM ASSESSOR</button>
+            <button class="header-contact-button-mobile open-modal-button">FALE COM UM ASSESSOR</button>
         </div>
     </section>
 
@@ -434,13 +437,55 @@
                     </p>
                    
                 </div>
-                <button class="btn-strategy">FALE COM UM ASSESSOR</button>
+                <button class="btn-strategy open-modal-button">FALE COM UM ASSESSOR</button>
             </div>
             <div class="image-container">
                 <img class="image-person" src="/images/perso-patrimony.png" />
             </div>
         </section>
 
+
+
+        <div id="modal-overlay" class="modal-overlay">
+            <section class="contact-section-modal">
+              <div class="contact-image-container-modal">
+                <img src="/images/personContact.png" class="contact-image-modal" alt="Imagem de contato">
+              </div>
+              <div class="contain-form-contact-modal">
+               
+                <div class="content-form-modal">
+                    <button id="close-modal-button" class="close-modal-button">
+                        <img src="/images/Close.png" />
+                    </button>
+                  <h2>FALE UM UM ASSESSOR</h2>
+                  <form class="form-contact-modal" id="contact-form-modal">
+                    <input type="text" id="name" name="name" class="form-input-contact-modal" placeholder="Nome" required>
+                    <input type="text" id="sobrenome" name="sobrenome" class="form-input-contact-modal" placeholder="Sobrenome" required>
+                    <input type="tel" id="phone" name="phone" class="form-input-contact-modal" placeholder="Celular" required>
+                    <input type="email" id="email" name="email" class="form-input-contact-modal" placeholder="E-mail" required>
+                    <label for="subject" class="form-label-contact-modal">Quanto quer investir?</label>
+                    <select id="subject" name="subject" class="form-select-contact-modal" required>
+                      <option value="300mil-1milhao" class="option-contact-modal" selected>R$ 300 mil a R$ 1 milhão</option>
+                      <option value="1milhao-5milhoes" class="option-contact-modal">R$ 1 milhão a R$ 5 milhões</option>
+                      <option value="acima-5milhoes" class="option-contact-modal">Acima de R$ 5 milhões</option>
+                    </select>
+                    <label for="message" class="form-label-contact-modal">Descreva brevemente seus objetivos com os investimentos e nossas soluções (opcional):</label>
+                    <textarea id="message" name="message" class="form-textarea-contact-modal" placeholder="Escreva aqui"></textarea>
+                    <button type="submit" class="form-button-modal">ENVIAR</button>
+                  </form>
+                </div>
+                <div class="check-dispatch-modal" id="success-message-modal" style="display: none;">
+                  <div class="content-center-modal">
+                    <img src="./images/chek-icon.png" />
+                    <h2>SEUS DADOS FORAM ENVIADOS COM SUCESSO!</h2>
+                    <p>LOGO UM DE NOSSOS ASSESSORES ENTRARÁ EM CONTATO COM VOCÊ.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+          
 
     </section>
 
@@ -508,6 +553,8 @@
             </div>
         </div>
     </section>
+
+
 
 
 

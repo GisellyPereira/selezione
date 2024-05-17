@@ -8,16 +8,18 @@
 }
 .slide-about{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 .item-slide{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
     gap: 1rem;
+    max-width: 340px;
 }
+
 .section-title-slide{
     font-family: "Libre Bodoni", serif;
     font-weight: 400;
@@ -51,12 +53,14 @@
 }
 .two-item{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .section-slide-about-mobile{
     background: var(--secundaria);
     padding: 3rem 2rem;
-    margin-top: 40px;
     display: none;
 }
 .slide-about-mobile{
@@ -101,6 +105,9 @@
 .about-slick .slick-dots li button:before {
     display: none !important;
 }
+.about-slick.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
 
 
 /* MISSAO E VALORES */
@@ -108,17 +115,17 @@
 .mission-values-section{
     display: flex;
     justify-content: center;
-    align-items: center;
+   
+
 }
 .mission{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
     padding: 2rem;
     max-width: 500px;
-    
+width: 100%;
 }
 .mission-title{
     font-family: "Libre Bodoni", serif;
@@ -128,6 +135,7 @@
     letter-spacing: 1px;
     margin-bottom: 10px;
     color: var(--primaria);
+    text-align: center;
 }
 .mission-description{
     font-family: "Lato", sans-serif;
@@ -147,8 +155,7 @@
     gap: 1rem;
     padding: 2rem;
     max-width: 500px;
-    text-align: start;
-
+width: 100%;
 }
 .values-title{
     font-family: "Libre Bodoni", serif;
@@ -158,6 +165,14 @@
     letter-spacing: 1px;
     margin-bottom: 10px;
     color: var(--primaria);
+    text-align: center;
+}
+.values-list{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+justify-content: flex-start;
+text-align: start;
 }
 .value-about {
     font-family: "Lato", sans-serif;
@@ -171,21 +186,44 @@
 
 
 @media (max-width: 950px) {
+    .section-slide-about{
+        padding: 1rem 1rem;
+    }
+    .slide-about{
+        gap: 0rem;
+    }
+    .item-slide{
+        max-width: 500px;
+    }
     .mission-values-section{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
     }
-    .mission{
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
+    .mission {
+        align-items: flex-start;
         padding: 1rem;
         max-width: 100%;
-        margin-top: 2rem;
+        margin-top: 20px;
+    }
+     
+    .values-abouts {
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    .mission-title,
+    .values-title {
+        text-align: center;
+        align-self: center;
+        width: 100%;
+    }
+    .title-item{
+        font-size: 15px;
     }
 }
+
 
 @media (max-width: 800px) {
     .section-slide-about{
@@ -194,7 +232,6 @@
     .section-slide-about-mobile{
         display: block;
     }
-    .values-abouts{
-        padding: 0;
-    }
 }
+
+

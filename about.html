@@ -30,7 +30,7 @@
                 <li class="menu-item"> <a href="/contact.html" class="menu-link">Entre em contato</a> </li>
             </ul>
         </nav>
-        <button class="header-contact-button">FALE COM UM ACESSOR</button>
+        <button class="header-contact-button open-modal-button">FALE COM UM ASSESSOR</button>
     </section>
     <section class="header-container-mobile">
         <div class="container-img-button-mobile">
@@ -55,19 +55,23 @@
                     <li class="menu-item-mobile"> <a href="/contact.html" class="menu-link-mobile">Entre em contato</a>
                     </li>
                 </ul>
+                <div class="btn-menu-mobile">
+                    <button class="header-contact-button-menu open-modal-button">FALE COM UM ASSESSOR</button>
+                </div>
             </div>
 
         </div>
         <div>
-            <button class="header-contact-button-mobile">FALE COM UM ACESSOR</button>
+            <button class="header-contact-button-mobile open-modal-button">FALE COM UM ASSESSOR</button>
         </div>
     </section>
 
     <!-- about banner -->
 
 
-    <section class="container-content-about">
-        <div class="banner-content-about">
+    <section class="container-content">
+        <div class="container-content-about">
+           <div class="banner-content-about">
             <div class="navigation-about">
                 <p class="nav-item-about">Home</p>
                 <span class="separator-about"></span>
@@ -106,8 +110,7 @@
                     <img src="/images/Rectangle 36.png" />
                 </div>
                 <div class="content-2">
-                    <p class="title-escolha2">ESCOLHA DE EXCELÊNCIA PARA GARANTIR A SEGURANÇA E SOLIDEZ DE SEU
-                        PATRIMÔNIO</p>
+                    <p class="title-escolha2">ATENDIMENTO EXCLUSIVO, COM ASSESSORIAS PROFISSIONAIS PARA SEUS MELHORES INVESTIMENTOS</p>
                     <p class="desc-escolha2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo purus
                         in est convallis, vel luctus
                         lorem varius. Ut condimentum euismod nisi, ut volutpat justo posuere nec. Vivamus euismod justo
@@ -136,9 +139,6 @@
                         purus.
                         Nullam sit amet eleifend quam.</p>
                 </div>
-                <div class="image-2-mobile">
-                    <img src="/images/Rectangle 34.png" />
-                </div>
                 <div class="section-flutuant-mobile">
                     <p>Vivamus vitae felis ac velit congue placerat. Nullam vel enim nec magna feugiat tincidunt.
                         Euismod
@@ -151,6 +151,10 @@
                         eget condimentum justo venenatis finibus.
                         Vivamus fermentum risus eu lectus pharetra, nec ultricies tortor viverra.</p>
                 </div>
+                <div class="image-2-mobile">
+                    <img src="/images/Rectangle 34.png" />
+                </div>
+                
                 <div class="content-2-mobile">
                     <p class="title-escolha-mobile2">ATENDIMENTO EXCLUSIVO, COM ASSESSORIAS PROFISSIONAIS PARA SEUS
                         MELHORES INVESTIMENTOS</p>
@@ -184,7 +188,7 @@
                         investidores as melhores soluções personalizadas, a partir da tradição e solidez de 180 anos de
                         experiência.</p>
                     <p class="contact-text-investments">Fale com um de nossos assessores!</p>
-                    <button class="contact-button-investments">FALE COM UM ASSESSOR</button>
+                    <button class="contact-button-investments open-modal-button">FALE COM UM ASSESSOR</button>
                 </div>
 
                 <div class="image-container-about">
@@ -327,12 +331,53 @@
                     <li class="value-about">Vivamus vitae tristique nulla.</li>
                 </ul>
             </div>
-        </section>
+        </section> 
+        </div>
+        
         
         
 
 
     </section>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <section class="contact-section-modal">
+          <div class="contact-image-container-modal">
+            <img src="/images/personContact.png" class="contact-image-modal" alt="Imagem de contato">
+          </div>
+          <div class="contain-form-contact-modal">
+           
+            <div class="content-form-modal">
+                <button id="close-modal-button" class="close-modal-button">
+                    <img src="/images/Close.png" />
+                </button>
+              <h2>FALE UM UM ASSESSOR</h2>
+              <form class="form-contact-modal" id="contact-form-modal">
+                <input type="text" id="name" name="name" class="form-input-contact-modal" placeholder="Nome" required>
+                <input type="text" id="sobrenome" name="sobrenome" class="form-input-contact-modal" placeholder="Sobrenome" required>
+                <input type="tel" id="phone" name="phone" class="form-input-contact-modal" placeholder="Celular" required>
+                <input type="email" id="email" name="email" class="form-input-contact-modal" placeholder="E-mail" required>
+                <label for="subject" class="form-label-contact-modal">Quanto quer investir?</label>
+                <select id="subject" name="subject" class="form-select-contact-modal" required>
+                  <option value="300mil-1milhao" class="option-contact-modal" selected>R$ 300 mil a R$ 1 milhão</option>
+                  <option value="1milhao-5milhoes" class="option-contact-modal">R$ 1 milhão a R$ 5 milhões</option>
+                  <option value="acima-5milhoes" class="option-contact-modal">Acima de R$ 5 milhões</option>
+                </select>
+                <label for="message" class="form-label-contact-modal">Descreva brevemente seus objetivos com os investimentos e nossas soluções (opcional):</label>
+                <textarea id="message" name="message" class="form-textarea-contact-modal" placeholder="Escreva aqui"></textarea>
+                <button type="submit" class="form-button-modal">ENVIAR</button>
+              </form>
+            </div>
+            <div class="check-dispatch-modal" id="success-message-modal" style="display: none;">
+              <div class="content-center-modal">
+                <img src="./images/chek-icon.png" />
+                <h2>SEUS DADOS FORAM ENVIADOS COM SUCESSO!</h2>
+                <p>LOGO UM DE NOSSOS ASSESSORES ENTRARÁ EM CONTATO COM VOCÊ.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
 
     <!-- footer -->
     <section class="footer">

@@ -3,8 +3,8 @@
 
 
 .container-content-about{
-    padding: 3rem 20rem;
-    background-color: var(--light) ;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .banner-content-about{
     display: flex;
@@ -76,20 +76,20 @@
     letter-spacing: 1px;
     margin-bottom: 10px;
     color: var(--dark);
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-bottom: 30px;
 }
 .desc-escolha{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
     color: var(--dark);
 }
 .desc-escolha2{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
     color: var(--dark);
 }
@@ -98,7 +98,7 @@
     background: #ffffff;
     display: inline-block;
     max-width: 500px;
-    padding: 40px 60px;
+    padding: 40px ;
     margin-right: 12rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
@@ -120,11 +120,11 @@
     display: none;
 }
 .title-escolha-mobile{
-    font-size:18px ;
+    font-size:20px ;
     font-weight: 300;
     font-family: "Lato", serif;
     color: var(--dark);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .title-escolha-mobile2{
@@ -132,7 +132,7 @@
     font-weight: 300;
     font-family: "Lato", serif;
     color: var(--dark);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 .desc-escolha-mobile{
@@ -162,7 +162,6 @@
     line-height: 19px;
     color: var(--dark);
     margin: 10px 0 8px 0;
-    text-align: center;
 }
 .image-2-mobile {
  text-align: center;
@@ -187,13 +186,6 @@
 }
 
 
-@media (max-width: 1600px) {
-    .container-content-about{
-        padding: 3rem 10rem;
-        background-color: var(--light) ;
-    }
-}
-
 
 @media (max-width: 1555px) {
     .about-content{
@@ -212,10 +204,6 @@
     }
     .about-parag-01{
         font-size: 15px;
-    }
-    .section-flutuant{
-        max-width: 400px;
-    padding: 30px 40px;
     }
 }
 
@@ -240,9 +228,6 @@
     }
 }
 @media (max-width: 1135px) {
-    .container-content-about{
-        padding: 3rem 3rem;
-    }
     .about-content{
         padding: 1rem 1rem;
     }
@@ -256,9 +241,6 @@
     }
     .about-parag-01{
         margin: 0px 0 5px 0;
-    }
-    .btn-about{
-        margin-top: 5px;
     }
     .section-flutuant{
         margin-right: 2rem;
@@ -281,15 +263,17 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
     .container-about-top{
         display: none;
     }
     .container-about-top-mobile{
         display: block;
     }
-    .container-content-about{
-        padding: 2rem 1rem;
+    .banner-heading-about{
+        font-size: 24px;
+        margin-bottom: 1rem;
+    
     }
    
 

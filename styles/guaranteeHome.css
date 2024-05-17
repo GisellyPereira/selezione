@@ -154,7 +154,7 @@
 
 
 .guarantee-section-mobile {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: none;
     flex-direction: column;
 }
@@ -201,9 +201,8 @@
 .guarantee-features-mobile {
     background-color: var(--secundaria);
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 20px 40px;
+    padding:  40px;
     height: 200px;
 }
 
@@ -212,6 +211,7 @@
 .feature-item-mobile {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .feature-image-mobile {
@@ -238,10 +238,11 @@
 
 .mobile-guarantee-slick .slick-dots {
     position: absolute !important;
-    bottom: 15px !important;
+    bottom: 25px !important;
     width: 100% !important;
     text-align: center !important;
     list-style: none !important;
+    margin-bottom: 10px;
 }
 
 .mobile-guarantee-slick .slick-dots li {

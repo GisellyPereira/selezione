@@ -2,7 +2,7 @@
 
 
 .about-investments-section{
-    margin-top: 3rem;
+    margin-top: 20px;
 }
 .banner-investments {
     position: relative;
@@ -92,7 +92,7 @@
     font-size: 16px;
     line-height: 19px;
     color: var(--dark);
-    margin-top: 30px;
+    margin: 20px 0px;
 }
 
 

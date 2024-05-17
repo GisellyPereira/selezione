@@ -1,73 +1,101 @@
 @import 'geral.css';
 
-/* FORM CONTACT */
 
-.contact-section{
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+.contact-section-modal {
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.contact-section-modal{
     display: flex;
     justify-content: center;
 }
-.contact-image-container{
+.contact-image-container-modal{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-image-container img{
+.contact-image-container-modal img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.contain-form-contact{
+.contain-form-contact-modal{
     background-color: var(--secundaria);
     padding: 2rem;
+    width: 491px;
     
 }
-.contain-form-contact h2{
+.contain-form-contact-modal h2{
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 19px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
-.form-contact{
+.form-contact-modal{
     display: flex;
     flex-direction: column;
 }
-.form-input-contact{
+.form-input-contact-modal{
     background-color: var(--secundaria);
     border: 1px solid var(--primaria);
     padding: 16px;
     margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
-.form-input-contact::placeholder{
+.form-input-contact-modal::placeholder{
     color: var(--primaria);
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
 }
-.form-label-contact{
+.form-label-contact-modal{
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 1rem;
 }
-.form-select-contact{
+.form-select-contact-modal{
     background-color: var(--secundaria);
     border: 1px solid var(--primaria);
     padding: 16px;
     margin-bottom: 1rem;
 }
 
-.option-contact{
+.option-contact-modal{
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
 }
-.form-textarea-contact{
+.form-textarea-contact-modal{
     background-color: var(--secundaria);
     border: 1px solid var(--primaria);
     padding: 16px;
@@ -75,7 +103,7 @@
     margin-bottom: 1rem;
     resize: none;
 }
-.form-contact button{
+.form-contact-modal button{
     background-color: var(--primaria);
     color: var(--secundaria);
     padding: 16px;
@@ -89,11 +117,11 @@
     transition: all 0.5s ease;
 }
 
-.form-contact button:hover{
+.form-contact-modal button:hover{
     background-color: var(--azul-medio);
 }
 
-.check-dispatch {
+.check-dispatch-modal {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -104,14 +132,15 @@
     height: 100%; 
     margin-top: 12rem;
 }
-.check-dispatch img {
+.check-dispatch-modal img {
     margin-bottom: 30px;
 }
 
-.content-center {
+.content-center-modal {
     width: 100%;
+    margin: 50px 0px;
 }
-.content-center h2{
+.content-center-modal h2{
     font-family: "Libre Bodoni", sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -119,22 +148,35 @@
     line-height: 1.5;
 
 }
-.content-center p{
+.content-center-modal p{
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 2rem;
 }
+.no-scroll {
+    overflow: hidden;
+}
+/* CSS */
+.close-modal-button {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
 
 @media (max-width: 1200px) {
-    .check-dispatch { 
+    .check-dispatch-modal { 
         margin-top: 10rem;
     }
 
 }
 @media (max-width: 1100px) {
-    .check-dispatch { 
+    .check-dispatch-modal { 
         margin-top: 8rem;
     }
 
@@ -142,37 +184,47 @@
 
 
 @media (max-width: 900px) {
-    .contact-image-container {
+    .contact-image-container-modal {
         display: none;
     }
-    .contain-form-contact h2 {
+    .form-label-contact-modal{
+        display: none;
+    }
+    .form-textarea-contact-modal{
+       display: none;
+    }
+    .contain-form-contact-modal {
+        width: 400px;
+        padding: 20px;
+    }
+    .contain-form-contact-modal h2 {
         font-size: 16px;
         margin-bottom: 1rem;
     }
-    .form-input-contact {
+    .form-input-contact-modal {
         padding: 14px;
     }
-    .form-input-contact::placeholder {
+    .form-input-contact-modal::placeholder {
         font-size: 14px;
     }
-    .form-label-contact {
-        font-size: 14px;
-    }
-    .form-select-contact {
+    .form-select-contact-modal {
         font-size: 14px;
         padding: 14px;
     }
-    .option-contact {
+    .option-contact-modal {
         font-size: 14px;
     }
-    .form-textarea-contact {
+    .form-contact-modal button {
         font-size: 14px;
     }
-    .form-contact button {
-        font-size: 14px;
-    }
-    .check-dispatch {
+    .check-dispatch-modal {
         margin-top: 0rem;
     }
+}
 
+@media (max-width: 500px) {
+    .contain-form-contact-modal {
+        width: 320px;
+    }
+   
 }
