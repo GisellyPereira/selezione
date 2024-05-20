@@ -131,10 +131,13 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .card-slide .slick-list {
         padding-left: 0 !important;
         padding-right: 8rem !important; 
+    }
+    .title-solutions{
+        font-size: 24px;
     }
     
 }

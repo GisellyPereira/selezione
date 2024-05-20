@@ -8,6 +8,7 @@ import FormContact from "./modules/formContact.js";
 import OpenSolutions from "./modules/openSolutions.js";
 import SlideBenefits from "./modules/slideBenefits.js";
 import SlideAbout from "./modules/slideAbout.js";
+import ModalContact from "./modules/ModalContact.js";
 
 const bannerHome = new BannerHome();
 const cardsHome = new CardsHome();
@@ -19,4 +20,5 @@ const openSolutions = new OpenSolutions();
 const slideBenefits = new SlideBenefits();
 const slideAbout = new SlideAbout();
 const formContact = new FormContact();
+const modalContact = new ModalContact();
 
