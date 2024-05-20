@@ -41,7 +41,7 @@
     text-align: center; 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .heading-contact{
         font-size: 24px;
         line-height: 28px;
@@ -51,5 +51,8 @@
         font-size: 14px;
         line-height: 20px;
         text-align: start;
+    }
+    .toper-contact{
+        margin-top: 122px;
     }
 }

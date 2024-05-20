@@ -116,6 +116,10 @@
     .advisor-section{
         grid-template-columns: repeat(2, 1fr);
     }
+    .toper-advisors{
+        margin-top: 122px;
+    
+    }
 }
 @media (max-width: 700px){
     .location-advisors{

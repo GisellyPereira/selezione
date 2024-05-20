@@ -1,5 +1,6 @@
 @import 'geral.css';
 
+
 .solutions-banner{
     display: block;
     position: relative;
@@ -122,5 +123,11 @@
     }
     .banner-subheading-solutions{
         font-size: 14px;
+    }
+    .toper-solutions{
+        margin-top: 122px;
+    }
+    .solutions-banner{
+        margin-top: 122px;
     }
 }
