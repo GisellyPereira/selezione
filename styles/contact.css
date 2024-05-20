@@ -11,7 +11,7 @@
 .nav-item-contact{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
     color: var(--primaria);
@@ -45,6 +45,7 @@
     .heading-contact{
         font-size: 24px;
         line-height: 28px;
+        margin-bottom: 1rem;
     }
     .description-contact{
         font-size: 14px;

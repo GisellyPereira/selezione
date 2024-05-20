@@ -10,7 +10,7 @@
 .nav-item-advisors{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
     color: var(--primaria);
@@ -133,5 +133,12 @@
     }
     .advisor-info{
         justify-content: flex-start;
+    }
+    .heading-advisors{
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+    .description-advisors{
+        font-size: 14px;
     }
 }

@@ -10,7 +10,7 @@
 .nav-item-solutions{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
     color: var(--primaria);
@@ -142,6 +142,13 @@
 @media (max-width: 950px) {
     .container-content-solutions{
         padding: 2rem 2rem;
+    }
+    .heading-solutions{
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+    .description-solutions{
+        font-size: 14px;
     }
 }
 

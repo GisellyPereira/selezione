@@ -38,22 +38,22 @@
 }
 
 .contact-image-container-modal img{
-    width: 100%;
-    height: 100%;
+    width: 491px;
+    height: 560px;
     object-fit: cover;
 }
 .contain-form-contact-modal{
     background-color: var(--secundaria);
     padding: 2rem;
     width: 491px;
-    
+    height: 560px;
 }
 .contain-form-contact-modal h2{
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 19px;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .form-contact-modal{
@@ -138,7 +138,6 @@
 
 .content-center-modal {
     width: 100%;
-    margin: 50px 0px;
 }
 .content-center-modal h2{
     font-family: "Libre Bodoni", sans-serif;
@@ -158,7 +157,6 @@
 .no-scroll {
     overflow: hidden;
 }
-/* CSS */
 .close-modal-button {
     position: absolute;
     top: 45px;
@@ -179,6 +177,13 @@
     .check-dispatch-modal { 
         margin-top: 8rem;
     }
+    .contain-form-contact-modal{
+        width: 400px;
+    }
+    .contact-image-container-modal img{
+        width: 400px;
+    }
+
 
 }
 
@@ -187,14 +192,9 @@
     .contact-image-container-modal {
         display: none;
     }
-    .form-label-contact-modal{
-        display: none;
-    }
-    .form-textarea-contact-modal{
-       display: none;
-    }
     .contain-form-contact-modal {
-        width: 400px;
+        width: 350px;
+        height: 510px;
         padding: 20px;
     }
     .contain-form-contact-modal h2 {
@@ -216,6 +216,7 @@
     }
     .form-contact-modal button {
         font-size: 14px;
+        margin-top: 0.5rem;
     }
     .check-dispatch-modal {
         margin-top: 0rem;

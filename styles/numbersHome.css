@@ -85,6 +85,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 40px;
 }
 .number-item-mobile{
     text-align: center;
@@ -126,8 +127,7 @@
 
 .number-slick .slick-dots {
     position: absolute !important;
-    bottom: -40px !important;
-
+    bottom: -9px !important;
     width: 100% !important;
     text-align: center !important;
     list-style: none !important;
